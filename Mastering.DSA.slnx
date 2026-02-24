@@ -8,6 +8,9 @@
   <Folder Name="/Binary Search/">
     <Project Path="src/BinarySearch/BinarySearch.csproj" Id="75b3b58f-365c-47d5-b5d6-48f7af1ef71a" />
   </Folder>
+  <Folder Name="/Binary Tree/">
+    <Project Path="src/BinaryTree/BinaryTree.csproj" Id="a3c4c21d-1b8e-41ed-833c-bc226cd82950" />
+  </Folder>
   <Folder Name="/FIFO/">
     <Project Path="src/FIFO/FIFO.csproj" Id="dad19393-7f06-4bd2-b0db-1ec2a75a7c85" />
   </Folder>
