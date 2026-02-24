@@ -1,6 +1,6 @@
 ﻿namespace LIFO;
 
-public class MyStack
+public class StackUsingLinkedList
 {
     private Node? top;
 

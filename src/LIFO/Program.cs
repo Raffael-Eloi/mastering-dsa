@@ -1,6 +1,6 @@
 ﻿using LIFO;
 
-var stack = new MyStack();
+var stack = new StackUsingLinkedList();
 
 stack.Push(10);
 stack.Push(20);

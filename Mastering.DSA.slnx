@@ -2,6 +2,9 @@
   <Folder Name="/Big O Notation/">
     <Project Path="src/BigONotation/BigONotation.csproj" Id="27812ad2-5817-4eed-a59c-0933429e3602" />
   </Folder>
+  <Folder Name="/FIFO/">
+    <Project Path="src/FIFO/FIFO.csproj" Id="dad19393-7f06-4bd2-b0db-1ec2a75a7c85" />
+  </Folder>
   <Folder Name="/LIFO/">
     <Project Path="src/LIFO/LIFO.csproj" Id="6db75601-3cf6-4689-9c5b-e9c84f0d18a8" />
   </Folder>
