@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.*" />
+    <PackageReference Include="NUnit" Version="4.*" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.*" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\LinkedList\LinkedList.csproj" />
+    <ProjectReference Include="..\..\src\FIFO\FIFO.csproj" />
+    <ProjectReference Include="..\..\src\LIFO\LIFO.csproj" />
+    <ProjectReference Include="..\..\src\HashTable\HashTable.csproj" />
+    <ProjectReference Include="..\..\src\BinarySearchTree\BinarySearchTree.csproj" />
+    <ProjectReference Include="..\..\src\BinarySearch\BinarySearch.csproj" />
+    <ProjectReference Include="..\..\src\DoublyLinkedList\DoublyLinkedList.csproj" />
+    <ProjectReference Include="..\..\src\Trie\Trie.csproj" />
+    <ProjectReference Include="..\..\src\Graph\Graph.csproj" />
+  </ItemGroup>
+
+</Project>

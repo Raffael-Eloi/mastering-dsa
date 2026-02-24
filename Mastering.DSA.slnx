@@ -26,7 +26,31 @@
   <Folder Name="/8 - Sorting Algorithms/">
     <Project Path="src/SortingAlgorithms/SortingAlgorithms.csproj" Id="8d74e3b9-606a-4540-8a7d-79e7b6bc3535" />
   </Folder>
+  <Folder Name="/9 - Doubly Linked List/">
+    <Project Path="src/DoublyLinkedList/DoublyLinkedList.csproj" />
+  </Folder>
+  <Folder Name="/10 - Graph/">
+    <Project Path="src/Graph/Graph.csproj" />
+  </Folder>
+  <Folder Name="/11 - Trie/">
+    <Project Path="src/Trie/Trie.csproj" />
+  </Folder>
+  <Folder Name="/12 - Recursion and Backtracking/">
+    <Project Path="src/RecursionBacktracking/RecursionBacktracking.csproj" />
+  </Folder>
+  <Folder Name="/13 - Dynamic Programming/">
+    <Project Path="src/DynamicProgramming/DynamicProgramming.csproj" />
+  </Folder>
+  <Folder Name="/14 - Two Pointers/">
+    <Project Path="src/TwoPointers/TwoPointers.csproj" />
+  </Folder>
+  <Folder Name="/15 - Greedy Algorithms/">
+    <Project Path="src/GreedyAlgorithms/GreedyAlgorithms.csproj" />
+  </Folder>
   <Folder Name="/999 - Interview questions/">
     <Project Path="src/InterviewQuestions/InterviewQuestions.csproj" Id="a083cf84-3499-4547-992b-25723a016dc1" />
+  </Folder>
+  <Folder Name="/Tests/">
+    <Project Path="tests/Mastering.DSA.Tests/Mastering.DSA.Tests.csproj" />
   </Folder>
 </Solution>
