@@ -2,6 +2,9 @@
   <Folder Name="/Big O Notation/">
     <Project Path="src/BigONotation/BigONotation.csproj" Id="27812ad2-5817-4eed-a59c-0933429e3602" />
   </Folder>
+  <Folder Name="/Binary Search Tree/">
+    <Project Path="src/BinarySearchTree/BinarySearchTree.csproj" Id="86ee65a2-1186-40c9-8ede-fdb5b16ed532" />
+  </Folder>
   <Folder Name="/Binary Search/">
     <Project Path="src/BinarySearch/BinarySearch.csproj" Id="75b3b58f-365c-47d5-b5d6-48f7af1ef71a" />
   </Folder>
