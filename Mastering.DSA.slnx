@@ -1,26 +1,26 @@
 <Solution>
-  <Folder Name="/Big O Notation/">
+  <Folder Name="/0 - Big O Notation/">
     <Project Path="src/BigONotation/BigONotation.csproj" Id="27812ad2-5817-4eed-a59c-0933429e3602" />
   </Folder>
-  <Folder Name="/Binary Search Tree/">
-    <Project Path="src/BinarySearchTree/BinarySearchTree.csproj" Id="86ee65a2-1186-40c9-8ede-fdb5b16ed532" />
+  <Folder Name="/1 - LinkedList/">
+    <Project Path="src/LinkedList/LinkedList.csproj" Id="57fecb19-d3e4-4f74-9d64-01c69a6ddc65" />
   </Folder>
-  <Folder Name="/Binary Search/">
-    <Project Path="src/BinarySearch/BinarySearch.csproj" Id="75b3b58f-365c-47d5-b5d6-48f7af1ef71a" />
-  </Folder>
-  <Folder Name="/Binary Tree/">
-    <Project Path="src/BinaryTree/BinaryTree.csproj" Id="a3c4c21d-1b8e-41ed-833c-bc226cd82950" />
-  </Folder>
-  <Folder Name="/FIFO/">
+  <Folder Name="/2 - FIFO/">
     <Project Path="src/FIFO/FIFO.csproj" Id="dad19393-7f06-4bd2-b0db-1ec2a75a7c85" />
   </Folder>
-  <Folder Name="/Hash Table/">
-    <Project Path="src/HashTable/HashTable.csproj" Id="876723fd-32b0-47b4-ba8e-b59dfcc496b2" />
-  </Folder>
-  <Folder Name="/LIFO/">
+  <Folder Name="/3 - LIFO/">
     <Project Path="src/LIFO/LIFO.csproj" Id="6db75601-3cf6-4689-9c5b-e9c84f0d18a8" />
   </Folder>
-  <Folder Name="/LinkedList/">
-    <Project Path="src/LinkedList/LinkedList.csproj" Id="57fecb19-d3e4-4f74-9d64-01c69a6ddc65" />
+  <Folder Name="/4 - Hash Table/">
+    <Project Path="src/HashTable/HashTable.csproj" Id="876723fd-32b0-47b4-ba8e-b59dfcc496b2" />
+  </Folder>
+  <Folder Name="/5 - Binary Tree/">
+    <Project Path="src/BinaryTree/BinaryTree.csproj" Id="a3c4c21d-1b8e-41ed-833c-bc226cd82950" />
+  </Folder>
+  <Folder Name="/6 - Binary Search Tree/">
+    <Project Path="src/BinarySearchTree/BinarySearchTree.csproj" Id="86ee65a2-1186-40c9-8ede-fdb5b16ed532" />
+  </Folder>
+  <Folder Name="/7 - Binary Search/">
+    <Project Path="src/BinarySearch/BinarySearch.csproj" Id="75b3b58f-365c-47d5-b5d6-48f7af1ef71a" />
   </Folder>
 </Solution>
