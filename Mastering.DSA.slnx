@@ -5,6 +5,9 @@
   <Folder Name="/FIFO/">
     <Project Path="src/FIFO/FIFO.csproj" Id="dad19393-7f06-4bd2-b0db-1ec2a75a7c85" />
   </Folder>
+  <Folder Name="/Hash Table/">
+    <Project Path="src/HashTable/HashTable.csproj" Id="876723fd-32b0-47b4-ba8e-b59dfcc496b2" />
+  </Folder>
   <Folder Name="/LIFO/">
     <Project Path="src/LIFO/LIFO.csproj" Id="6db75601-3cf6-4689-9c5b-e9c84f0d18a8" />
   </Folder>
