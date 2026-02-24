@@ -1,6 +1,8 @@
-﻿namespace SortingAlgorithms
+namespace SortingAlgorithms;
+
+public class BubbleSortExample
 {
-    public void BubbleSort(int[] arr)
+    public static void Sort(int[] arr)
     {
         int n = arr.Length;
 

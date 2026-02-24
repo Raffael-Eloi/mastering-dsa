@@ -1,70 +1,65 @@
-﻿Hash Tables (Dictionary / HashMap / HashSet)
+# Hash Table (Dictionary / HashMap)
 
-A hash table gives you:
+A hash table stores key-value pairs with average O(1) lookup, insert, and delete.
 
-`⚡ Average O(1) lookup, insert, delete.`
+How it works:
 
-Think of it like:
-`Key → Hash Function → Array Index → Store Value`
-
-Example:
-
-`"apple" → hash → 3 → store in bucket[3]`
-
-It converts a key into an array index.
+```
+Key -> Hash Function -> Array Index -> Store Value
+"apple" -> hash -> 3 -> bucket[3]
+```
 
 ## Core Components
 
-A hash table has:
-1. Array (buckets)
-2. Hash function
-3. Collision handling strategy
+1. **Array (buckets)** — storage slots
+2. **Hash function** — converts key to index: `Math.Abs(key.GetHashCode() % size)`
+3. **Collision handling** — what happens when two keys map to the same index
 
-🔢 3️⃣ How Hashing Works
+## Complexity
 
-Simplified example:
+| Operation | Average | Worst Case |
+|-----------|---------|------------|
+| Add       | O(1)    | O(n)       |
+| Get       | O(1)    | O(n)       |
+| Remove    | O(1)    | O(n)       |
 
-int hash = key.GetHashCode();
-int index = Math.Abs(hash % buckets.Length);
+Worst case happens when all keys collide into the same bucket.
+In practice this is rare with a good hash function.
 
-Why % buckets.Length?
+## Collisions
 
-Because we must fit inside the array size.
+Two keys can produce the same index:
 
-⚠️ 4️⃣ What Is a Collision?
+```
+"abc" -> index 2
+"xyz" -> index 2   <- collision!
+```
 
-Two keys may produce the same index.
+### Chaining (our implementation)
 
-Example:
+Each bucket is a linked list. Colliding keys are appended:
 
-"abc" → index 2
-"xyz" → index 2
+```
+bucket[2]: [abc, value1] -> [xyz, value2]
+```
 
-Now what?
+### Other strategies (not implemented)
 
-This is called a collision.
+- **Open addressing**: probe the next empty slot
+- **Robin Hood hashing**: steal from rich buckets
+- **Cuckoo hashing**: use two hash functions
 
-We must handle it.
+## Why C# Dictionary Is Fast
 
-🧱 5️⃣ Collision Handling (Chaining)
+`Dictionary<TKey, TValue>` uses:
+- Hashing for O(1) access
+- Dynamic resizing when load factor exceeds threshold
+- Rehashing to redistribute keys across larger array
 
-Most common method: Linked List per bucket
+This keeps operations near O(1) even as the collection grows.
 
-Bucket[2]:
-[abc → value1] → [xyz → value2]
+## When to Use
 
-⚡ Why Dictionary in C# Is So Fast
-
-Dictionary<TKey, TValue> uses:
-
-Hashing
-
-Dynamic resizing
-
-Load factor control
-
-Rehashing
-
-When size grows → it resizes and redistributes elements.
-
-That keeps operations near O(1).
+- Fast lookups by key (caching, counting, indexing)
+- Checking membership (have I seen this value before?)
+- Grouping data by a key

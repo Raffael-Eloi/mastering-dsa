@@ -57,6 +57,36 @@ public class MyBinarySearchTree
         InOrderRecursive(node.Right);
     }
 
+    // Pre-order traversal: Root, Left, Right
+    public void PreOrder()
+    {
+        PreOrderRecursive(root);
+        Console.WriteLine();
+    }
+
+    private void PreOrderRecursive(TreeNode? node)
+    {
+        if (node == null) return;
+        Console.Write(node.Value + " ");
+        PreOrderRecursive(node.Left);
+        PreOrderRecursive(node.Right);
+    }
+
+    // Post-order traversal: Left, Right, Root
+    public void PostOrder()
+    {
+        PostOrderRecursive(root);
+        Console.WriteLine();
+    }
+
+    private void PostOrderRecursive(TreeNode? node)
+    {
+        if (node == null) return;
+        PostOrderRecursive(node.Left);
+        PostOrderRecursive(node.Right);
+        Console.Write(node.Value + " ");
+    }
+
     public void Delete(int value)
     {
         root = DeleteRecursive(root, value);

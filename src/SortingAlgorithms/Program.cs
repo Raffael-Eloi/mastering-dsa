@@ -1,10 +1,83 @@
-﻿public class Program
+using SortingAlgorithms;
+
+public class Program
 {
     public static void Main()
     {
-        int[] arr = { 64, 34, 25, 12, 22, 11, 90 };
-        BubbleSort(arr);
-        Console.WriteLine("Sorted array: " + string.Join(", ", arr));
+        Console.WriteLine("=== Sorting Algorithms ===\n");
+
+        // -----------------------------------------
+        // 1. Bubble Sort - O(n^2)
+        // -----------------------------------------
+        int[] arr1 = { 64, 34, 25, 12, 22, 11, 90 };
+        Console.WriteLine("--- Bubble Sort ---");
+        Console.WriteLine($"Before: [{string.Join(", ", arr1)}]");
+        BubbleSort(arr1);
+        Console.WriteLine($"After:  [{string.Join(", ", arr1)}]");
+
+        // -----------------------------------------
+        // 2. Insertion Sort - O(n^2)
+        // -----------------------------------------
+        int[] arr2 = { 64, 34, 25, 12, 22, 11, 90 };
+        Console.WriteLine("\n--- Insertion Sort ---");
+        Console.WriteLine($"Before: [{string.Join(", ", arr2)}]");
+        InsertionSort(arr2);
+        Console.WriteLine($"After:  [{string.Join(", ", arr2)}]");
+
+        // -----------------------------------------
+        // 3. Merge Sort - O(n log n)
+        // -----------------------------------------
+        int[] arr3 = { 64, 34, 25, 12, 22, 11, 90 };
+        Console.WriteLine("\n--- Merge Sort ---");
+        Console.WriteLine($"Before: [{string.Join(", ", arr3)}]");
+        MergeSort(arr3);
+        Console.WriteLine($"After:  [{string.Join(", ", arr3)}]");
+
+        // -----------------------------------------
+        // 4. Quick Sort - O(n log n) average
+        // -----------------------------------------
+        int[] arr4 = { 64, 34, 25, 12, 22, 11, 90 };
+        Console.WriteLine("\n--- Quick Sort ---");
+        Console.WriteLine($"Before: [{string.Join(", ", arr4)}]");
+        QuickSort(arr4);
+        Console.WriteLine($"After:  [{string.Join(", ", arr4)}]");
+
+        // -----------------------------------------
+        // 5. Heap Sort - O(n log n)
+        // -----------------------------------------
+        int[] arr5 = { 64, 34, 25, 12, 22, 11, 90 };
+        Console.WriteLine("\n--- Heap Sort ---");
+        Console.WriteLine($"Before: [{string.Join(", ", arr5)}]");
+        HeapSort(arr5);
+        Console.WriteLine($"After:  [{string.Join(", ", arr5)}]");
+
+        // -----------------------------------------
+        // Priority Queue (Min Heap)
+        // -----------------------------------------
+        Console.WriteLine("\n--- Min Heap (Priority Queue) ---");
+        var pq = new MinHeap();
+        pq.Enqueue(10);
+        pq.Enqueue(5);
+        pq.Enqueue(20);
+        pq.Enqueue(1);
+        Console.WriteLine("Enqueued: 10, 5, 20, 1");
+        Console.WriteLine($"Peek (min): {pq.Peek()}");
+        Console.WriteLine($"Dequeue: {pq.Dequeue()}"); // 1
+        Console.WriteLine($"Dequeue: {pq.Dequeue()}"); // 5
+        Console.WriteLine($"Dequeue: {pq.Dequeue()}"); // 10
+        Console.WriteLine($"Dequeue: {pq.Dequeue()}"); // 20
+
+        // -----------------------------------------
+        // Comparison Summary
+        // -----------------------------------------
+        Console.WriteLine("\n=== Sorting Algorithm Comparison ===");
+        Console.WriteLine("Algorithm      | Best     | Average  | Worst    | Space | Stable");
+        Console.WriteLine("---------------|----------|----------|----------|-------|-------");
+        Console.WriteLine("Bubble Sort    | O(n)     | O(n^2)   | O(n^2)   | O(1)  | Yes");
+        Console.WriteLine("Insertion Sort | O(n)     | O(n^2)   | O(n^2)   | O(1)  | Yes");
+        Console.WriteLine("Merge Sort     | O(nlogn) | O(nlogn) | O(nlogn) | O(n)  | Yes");
+        Console.WriteLine("Quick Sort     | O(nlogn) | O(nlogn) | O(n^2)   | O(logn)| No");
+        Console.WriteLine("Heap Sort      | O(nlogn) | O(nlogn) | O(nlogn) | O(1)  | No");
     }
 
     public static void BubbleSort(int[] arr)

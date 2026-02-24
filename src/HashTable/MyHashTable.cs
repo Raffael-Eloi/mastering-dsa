@@ -1,6 +1,4 @@
-﻿using System.Timers;
-
-namespace HashTable;
+﻿namespace HashTable;
 
 public class MyHashTable
 {
