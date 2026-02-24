@@ -23,4 +23,7 @@
   <Folder Name="/7 - Binary Search/">
     <Project Path="src/BinarySearch/BinarySearch.csproj" Id="75b3b58f-365c-47d5-b5d6-48f7af1ef71a" />
   </Folder>
+  <Folder Name="/8 - Sorting Algorithms/">
+    <Project Path="src/SortingAlgorithms/SortingAlgorithms.csproj" Id="8d74e3b9-606a-4540-8a7d-79e7b6bc3535" />
+  </Folder>
 </Solution>
