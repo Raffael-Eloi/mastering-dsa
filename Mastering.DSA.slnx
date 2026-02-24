@@ -26,4 +26,7 @@
   <Folder Name="/8 - Sorting Algorithms/">
     <Project Path="src/SortingAlgorithms/SortingAlgorithms.csproj" Id="8d74e3b9-606a-4540-8a7d-79e7b6bc3535" />
   </Folder>
+  <Folder Name="/999 - Interview questions/">
+    <Project Path="src/InterviewQuestions/InterviewQuestions.csproj" Id="a083cf84-3499-4547-992b-25723a016dc1" />
+  </Folder>
 </Solution>
