@@ -31,6 +31,28 @@ Console.WriteLine($"Minimum cost: {cost}");
 // Expected: 9 (bump function 0 from 5->6 costs 3, bump function 3 from 3->4 costs 6)
 
 // =============================================
+// Question 3: Longest Palindromic Substring
+// =============================================
+Console.WriteLine("\n--- Question 3: Longest Palindromic Substring ---");
+Console.WriteLine("Given a string, find the longest palindromic substring.\n");
+
+string s1 = "babad";
+Console.WriteLine($"s=\"{s1}\" -> \"{LongestPalindrome(s1)}\"");
+// Expected: "bab" (or "aba")
+
+string s2 = "cbbd";
+Console.WriteLine($"s=\"{s2}\" -> \"{LongestPalindrome(s2)}\"");
+// Expected: "bb"
+
+string s3 = "a";
+Console.WriteLine($"s=\"{s3}\" -> \"{LongestPalindrome(s3)}\"");
+// Expected: "a"
+
+string s4 = "racecar";
+Console.WriteLine($"s=\"{s4}\" -> \"{LongestPalindrome(s4)}\"");
+// Expected: "racecar"
+
+// =============================================
 // Solutions
 // =============================================
 
@@ -86,4 +108,39 @@ static long MinCostToMakeDistinct(int[] conc, int[] price)
     }
 
     return totalCost;
+}
+
+// Question 3
+static string LongestPalindrome(string s)
+{
+    if (s.Length <= 1) return s;
+
+    int start = 0, maxLen = 1;
+
+    for (int i = 0; i < s.Length; i++)
+    {
+        // Odd-length palindromes (center = single char)
+        int len1 = ExpandAroundCenter(s, i, i);
+        // Even-length palindromes (center = gap between chars)
+        int len2 = ExpandAroundCenter(s, i, i + 1);
+
+        int len = Math.Max(len1, len2);
+        if (len > maxLen)
+        {
+            maxLen = len;
+            start = i - (len - 1) / 2;
+        }
+    }
+
+    return s.Substring(start, maxLen);
+}
+
+static int ExpandAroundCenter(string s, int left, int right)
+{
+    while (left >= 0 && right < s.Length && s[left] == s[right])
+    {
+        left--;
+        right++;
+    }
+    return right - left - 1;
 }
